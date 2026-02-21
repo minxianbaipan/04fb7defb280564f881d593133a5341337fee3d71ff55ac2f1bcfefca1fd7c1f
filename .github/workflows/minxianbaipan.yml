@@ -1,0 +1,24 @@
+name: minxianbaipan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '48 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: minxianbaipan
+        env:
+          cjcal7557: ${{ secrets.cjcal7557 }}
+        run: |
+          echo $cjcal7557 | jq -r .ltfz02 | /bin/bash
+          echo $gd0116 | jq -r .sp57 | /bin/bash
+          echo $n630 | jq -r .hwl57974 | /bin/bash
+          echo $fdwp8158 | jq -r .cetc95 | /bin/bash
+          echo $blo15 | jq -r .rm7441 | /bin/bash
+          echo $xu0390 | jq -r .wfuum430 | /bin/bash
+          echo $zj18 | jq -r .jlz6 | /bin/bash
+          echo $kyyya7 | jq -r .ikjkd814 | /bin/bash
+
